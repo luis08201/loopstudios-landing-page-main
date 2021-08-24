@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/513e65e438.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Loopstudios landing page</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="subheader">
+      <nav class="header__navbar">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="header logo" class="header__logo--img">
+        </div>
+        <ul class="header__menu">
+          <a href="#" class="header__link">About</a>
+          <a href="#" class="header__link">Careers</a>
+          <a href="#" class="header__link">Events</a>
+          <a href="#" class="header__link">Products</a>
+          <a href="#" class="header__link">Support</a>
+        </ul>
+        <div class="header__menuToggle" onclick="toggleMenu();"></div>
+      </nav>
+      <div class="header__banner">
+        <div class="header__banner--header">
+          <h1 class="header__banner--heading">Immersive experiences that deliver
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="container__interactive">
+      <figure class="interactive__picture">
+        <img src="img/desktop/image-interactive.jpg" alt="guy using VR photo" class="interactive__img">
+      </figure>
+      <div class="interactive__description">
+        <h2 class="interactive__heading">The leader in interactive VR</h2>
+        <p class="interactive__paragraph">
+          Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.
+        </p>
+      </div>
+    </section>
+    <section class="container__creations">
+      <div class="creations__header">
+        <div class="creation__logo">
+          <h2 class="creation__heading">Our creations</h2>
+        </div>
+        <div class="creation__button">
+          <button class="creation__btn">See all</button>
+        </div>
+      </div>
+      <div class="creations__body">
+        <div class="creation__deep-earth">
+          <picture class="deep-earth__picture">
+            <source media="(max-width:768px)" srcset="img/mobile/image-deep-earth.jpg">
+            <source media="(max-width:1440px )" srcset="img/desktop/image-deep-earth.jpg">
+            <img src="img/desktop/image-deep-earth.jpg" alt="deep earth photo" class="deep-earth__img">
+          </picture>
+          <div class="deep-earth__description">
+            <h2 class="deep-earth__heading">deep <br> earth</h2>
+          </div>
+        </div>
+        <div class="creation__night-arcade">
+          <picture class="night-arcade__picture">
+            <source media="(max-width:768px)" srcset="img/mobile/image-night-arcade.jpg">
+            <source media="(max-width:1440px )" srcset="img/desktop/image-night-arcade.jpg">
+            <img src="img/desktop/image-night-arcade.jpg" alt="night arcade photo" class="night-arcade__img">
+          </picture>
+          <div class="night-arcade__description">
+            <h2 class="night-arcade__heading">night <br> arcade</h2>
+          </div>
+        </div>
+        <div class="creation__soccer-team">
+          <picture class="soccer-team__picture">
+            <source media="(max-width:768px)" srcset="img/mobile/image-soccer-team.jpg">
+            <source media="(max-width:1440px )" srcset="img/desktop/image-soccer-team.jpg">
+            <img src="img/desktop/image-soccer-team.jpg" alt="" class="soccer-team__img">
+          </picture>
+          <div class="soccer-team__description">
+            <h2 class="soccer-team__heading">soccer <br> team vh</h2>
+          </div>
+        </div>
+        <div class="creation__the-grid">
+          <picture class="the-grid__picture">
+            <source media="(max-width:768px)" srcset="img/mobile/image-grid.jpg">
+            <source media="(max-width:1440px )" srcset="img/desktop/image-grid.jpg">
+            <img src="img/desktop/image-grid.jpg" alt="the grid photo" class="the-grid__img">
+          </picture>
+          <div class="the-grid__description">
+            <h2 class="the-grid__heading">the <br> grid</h2>
+          </div>
+        </div>
+        <div class="creation__from-up-above-vr">
+          <picture class="from-up-above-vr__picture">
+            <source media="(max-width:768px)" srcset="img/mobile/image-from-above.jpg">
+            <source media="(max-width:1440px )" srcset="img/desktop/image-from-above.jpg">
+            <img src="img/desktop/image-from-above.jpg" alt="from up photo" class="from-up-above-vr__img">
+          </picture>
+          <div class="from-up-above-vr__description">
+            <h2 class="from-up-above-vr__heading">from up <br> above vr</h2>
+          </div>
+        </div>
+        <div class="creation__pocket-borealis">
+          <picture class="pocket-borealis__picture">
+            <source media="(max-width:768px)" srcset="img/mobile/image-pocket-borealis.jpg">
+            <source media="(max-width:1440px )" srcset="img/desktop/image-pocket-borealis.jpg">
+            <img src="img/desktop/image-pocket-borealis.jpg" alt="pocket borealis photo" class="pocket-borealis__img">
+          </picture>
+          <div class="pocket-borealis__description">
+            <h2 class="pocket-borealis__heading">pocket <br> borealis</h2>
+          </div>
+        </div>
+        <div class="creation__the-curiosity">
+          <picture class="the-curiosity__picture">
+            <source media="(max-width:768px)" srcset="img/mobile/image-curiosity.jpg">
+            <source media="(max-width:1440px )" srcset="img/desktop/image-curiosity.jpg">
+            <img src="img/desktop/image-curiosity.jpg" alt="curiosity photo" class="the-curiosity__img">
+          </picture>
+          <div class="the-curiosity__description">
+            <h2 class="the-curiosity__heading">the <br> curiosity</h2>
+          </div>
+        </div>
+        <div class="creation__make-it-fisheye">
+          <picture class="make-it-fisheye__picture">
+            <source media="(max-width:768px)" srcset="img/mobile/image-fisheye.jpg">
+            <source media="(max-width:1440px )" srcset="img/desktop/image-fisheye.jpg">
+            <img src="img/desktop/image-fisheye.jpg" alt="fisheye photo" class="make-it-fisheye__img">
+          </picture>
+          <div class="make-it-fisheye__description">
+            <h2 class="make-it-fisheye__heading">make it <br> fisheye</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main__footer">
+    <div class="subfooter">
+      <div class="footer__left">
+        <div class="footer__left--logo">
+          <img src="img/logo.svg" alt="logo footer" class="footer__left--img">
+        </div>
+        <ul class="footer__menu">
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Events</a>
+          <a href="#" class="footer__link">Products</a>
+          <a href="#" class="footer__link">Support</a>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right--socialnetwork">
+          <div class="footer__scn--box">
+            <a href="#" class="footer__scn fab fa-facebook-square"></a>
+          </div>
+          <div class="footer__scn--box">
+            <a href="#" class="footer__scn fab fa-twitter"></a>
+          </div>
+          <div class="footer__scn--box">
+            <a href="#" class="footer__scn fab fa-pinterest"></a>
+          </div>
+          <div class="footer__scn--box">
+            <a href="#" class="footer__scn fab fa-instagram"></a>
+          </div>
+        </div>
+        <div class="footer__credits">
+          <p class="footer__credits-paragraph">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+        <div class="footer__attribution">
+          <p class="footer__attribution--paragraph">
+            Challenge by <a class="footer__attribution--link" href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank">Frontend Mentor</a>.
+            Coded by <a class="footer__attribution--link" target="_blank" href="https://github.com/luis08201">Luis
+              Selva</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="js/menuToggle.js"></script>
+</body>
+
+</html>
